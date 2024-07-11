@@ -66,8 +66,11 @@ frps restart
 frps在安装的时候一定要把**bind port(端口)放行，其他配置的端口也要放行，要不然会没有办法进入frp的管理后台**【我这里是用宝塔进入服务器后进行的端口放行】  
 frps在配置好后会有包含ip等内容的总结数据，建议把该数据截图留用。
 
-安装好frps后输入:  
->http://[你的服务器ip]:[配置frps的bind port]
+安装好frps后输入:
+```Bash
+http://[你的服务器ip]:[配置frps的bind port]
+```
+可以进入你自己的frp控制台。
 ### 4、去[frp官方路径下载对应的客户端](https://github.com/fatedier/frp/releases)，并解压到本地后开始配置frpc.toml
 >*注意：老版本的ini文件后续会逐步被toml替代，官方也不再建议使用ini*。
 
