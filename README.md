@@ -23,7 +23,7 @@
 * [点击最右边的蓝色球](https://github.com/Tomp-Akoe/fcp/blob/41b5f26b579f82885a871b304bc6de8fe605cec7/photo/4.png)
 * [点击A创建需要解析的域名地址【根据穿透的重点不同，建议地址也不同】一半解析时间大概要15分钟左右](https://github.com/Tomp-Akoe/fcp/blob/41b5f26b579f82885a871b304bc6de8fe605cec7/photo/5.png)
 * [快到时间可以去chinaz.com中ping一下自己的地址](https://github.com/Tomp-Akoe/fcp/blob/41b5f26b579f82885a871b304bc6de8fe605cec7/photo/6.png)
-### 3、用FinalShell链接服务器后，输入命令一键安装。  
+### 3、用FinalShell连接服务器后，输入命令一键安装。  
 #### Gitee
 ```Bash
 wget https://gitee.com/mvscode/frps-onekey/raw/master/install-frps.sh -O ./install-frps.sh
