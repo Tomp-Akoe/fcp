@@ -14,7 +14,6 @@
 * [frp老版本内网穿透教程](https://www.bilibili.com/video/BV1tL4y1p7qA/?spm_id_from=333.880.my_history.page.click&vd_source=e24c2664016fb1213df78e216a6dd35f "借鉴服务端配置教程")
 * [frp宝塔端使用设置](https://www.bilibili.com/video/BV1PY4y1F7cb/?spm_id_from=333.880.my_history.page.click&vd_source=e24c2664016fb1213df78e216a6dd35f)
 * [frpc在windows端自启动](https://blog.csdn.net/gdali/article/details/108864769#:~:text=%E6%89%93%E5%BC%80%E5%BC%80%E5%A7%8B%E8%8F%9C%E5%8D%95%EF%BC%8C%E8%BE%93%E5%85%A5%20%E2%80%9C%E4%BB%BB%E5%8A%A1%E8%AE%A1%E5%88%92%E7%A8%8B%E5%BA%8F%E2%80%9D%20%E5%B0%86%E4%BC%9A%E8%87%AA%E5%8A%A8%E6%90%9C%E7%B4%A2%EF%BC%8C%E6%8E%A5%E7%9D%80%E6%89%93%E5%BC%80%E5%AE%83%E3%80%82%20%E7%82%B9%E5%87%BB%E5%8F%B3%E4%BE%A7%E7%9A%84%20%E2%80%9C%E5%88%9B%E5%BB%BA%E4%BB%BB%E5%8A%A1%E2%80%9D%EF%BC%8C%E5%90%8D%E7%A7%B0%E9%9A%8F%E6%84%8F%E5%A1%AB%E5%86%99%EF%BC%8C%E5%AE%89%E5%85%A8%E9%80%89%E9%A1%B9%E9%80%89%E6%8B%A9,%E2%80%9C%E4%B8%8D%E7%AE%A1%E7%94%A8%E6%88%B7%E6%98%AF%E5%90%A6%E7%99%BB%E5%BD%95%E9%83%BD%E8%A6%81%E8%BF%90%E8%A1%8C%E2%80%9D%EF%BC%8C%E5%BD%93%E7%84%B6%E4%BD%A0%E4%B9%9F%E5%8F%AF%E4%BB%A5%E9%80%89%E6%8B%A9%20%E2%80%9C%E5%8F%AA%E5%9C%A8%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%97%B6%E8%BF%90%E8%A1%8C%E2%80%9D%E3%80%82%20%E9%80%89%E6%8B%A9%20%E2%80%9C%E4%B8%8D%E7%AE%A1%E7%94%A8%E6%88%B7%E6%98%AF%E5%90%A6%E7%99%BB%E5%BD%95%E9%83%BD%E8%A6%81%E8%BF%90%E8%A1%8C%E2%80%9D%20%E5%8F%AF%E4%BB%A5%E8%AE%A9%E4%BD%A0%E7%9A%84%E7%94%B5%E8%84%91%E5%9C%A8%E6%96%AD%E7%94%B5%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8%E5%90%8E%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C%20frp%EF%BC%8C%E4%BD%A0%E5%B0%B1%E5%8F%AF%E4%BB%A5%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E8%BF%9E%E6%8E%A5%E7%94%B5%E8%84%91%E4%BA%86%E3%80%82)
-***
 ## 正式步骤：
 ### 1、先在vultr购买一个服务器【看经济能力任意即可】，购买后会获得服务器的ip和账号还有密码。
 * [参考图片](https://github.com/Tomp-Akoe/fcp/blob/41b5f26b579f82885a871b304bc6de8fe605cec7/photo/1.png)
@@ -63,14 +62,12 @@ frps stop
 ```Bash
 frps restart
 ```
-***
 ### 注意事项
 frps在安装的时候一定要把**bind port(端口)放行，要不然会没有办法进入frp的管理后台**【我这里是用宝塔进入服务器后进行的端口放行】  
 frps在配置好后会有包含ip等内容的总结数据，建议把该数据截图留用。
 
 安装好frps后输入:  
 >http://[你的服务器ip]:[配置frps的bind port]
-***
 ### 4、去[frp官方路径下载对应的客户端](https://github.com/fatedier/frp/releases)，并解压到本地后开始配置frpc.toml
 >*注意：老版本的ini文件后续会逐步被toml替代，官方也不再建议使用ini*。
 
